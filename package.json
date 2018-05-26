@@ -1,0 +1,27 @@
+{
+  "name": "smart_fantasy_sports",
+  "version": "1.0.0",
+  "description": "Fantasy Sports betting with ethereum smart contract, written in Solidity. App built with React/Redux/Node.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mattyfew/smart_fantasy_sports.git"
+  },
+  "keywords": [
+    "fantasy",
+    "sports",
+    "ethereum",
+    "solidity",
+    "smart",
+    "contracts"
+  ],
+  "author": "Matt Fewer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattyfew/smart_fantasy_sports/issues"
+  },
+  "homepage": "https://github.com/mattyfew/smart_fantasy_sports#readme"
+}
