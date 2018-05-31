@@ -4,9 +4,10 @@
   "description": "Fantasy Sports betting with ethereum smart contract, written in Solidity. App built with React/Redux/Node.",
   "main": "server.js",
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,8 @@
   "dependencies": {
     "next": "^6.0.3",
     "react": "^16.4.0",
-    "react-dom": "^16.4.0"
+    "react-dom": "^16.4.0",
+    "semantic-ui-css": "^2.3.1",
+    "semantic-ui-react": "^0.80.2"
   }
 }
