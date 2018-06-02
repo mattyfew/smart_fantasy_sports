@@ -4,8 +4,8 @@ pragma solidity ^0.4.17;
 contract LeagueFactory {
     address[] public deployedLeagues;
 
-    function createLeague(uint entryFee, uint size, uint firstPot, uint secondPot, uint thirdPot) {
-        address newLeague = new League(msg.sender, uint entryFee, uint size, uint firstPot, uint secondPot, uint thirdPot);
+    function createLeague(uint entryFee, uint size, uint firstPot, uint secondPot, uint thirdPot) public {
+        address newLeague = new League(msg.sender, entryFee, size, firstPot, secondPot, thirdPot);
         deployedLeagues.push(newLeague);
     }
 
