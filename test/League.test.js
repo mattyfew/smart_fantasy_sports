@@ -40,4 +40,15 @@ describe('Leagues', () => {
         assert.ok(factory.options.address)
         assert.ok(league.options.address)
     })
+
+    it('marks caller as the league commissioner', async () => {
+        // because we marked commissioner as public, it has a method
+        // we can call to get its value
+        const commissioner = await league.methods.commissioner().call()
+        assert.equal(accounts[0], commissioner)
+    })
+
+    it('allows people to enter the league', () => {
+        
+    })
 })

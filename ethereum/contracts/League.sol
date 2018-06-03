@@ -16,7 +16,7 @@ contract LeagueFactory {
 
 contract League {
     mapping(address => bool) public teams;
-    address public manager;
+    address public commissioner;
 
     uint public buyInAmount;
     uint public leagueSize;
@@ -27,7 +27,7 @@ contract League {
     uint public thirdPlacePot;
 
     constructor(address creator, uint entryFee, uint size, uint firstPot, uint secondPot, uint thirdPot) public {
-        manager = creator;
+        commissioner = creator;
         buyInAmount = entryFee;
         leagueSize = size;
 
@@ -55,7 +55,7 @@ contract League {
     }
 
     modifier restricted() {
-        require(msg.sender == manager);
+        require(msg.sender == commissioner);
         _;
     }
 }
